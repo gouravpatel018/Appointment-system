@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Appointment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teacher Appointment System</h1>
+        <div id="appointmentForm" class="appointment-form">
+            <div style="margin-bottom: 18px;">
+                <label for="studentName">Your Name:</label>
+                <input type="text" class="student-name" id="studentName" required
+                style="border-color: pink;
+                border-style: solid;" placeholder="eg. Ayush patel">
+            </div>
+            <div style="margin-bottom: 18px;">
+                <label for="doubt" style="vertical-align: middle;">Your Doubt:</label>
+                <textarea id="doubt" required style="vertical-align: middle;
+                border-color: pink;
+                border-style: solid;" placeholder="eg. what are hashmaps?" ></textarea>
+            </div>
+            <div style="margin-bottom: 18px;">
+                <label for="appointmentTime">Preferred Appointment Time:</label>
+                <input type="datetime-local" id="appointmentTime" required 
+                style="border-color: pink;
+                border-style: solid;">
+            </div>
+            <div style="margin-bottom: 18px;">
+                <button onclick="checkAvailability()">Check Availability</button>
+            </div>
+        </div>
+        <div id="availabilityMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
